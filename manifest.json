@@ -1,0 +1,19 @@
+{
+  
+    "name": "Spiderman Hide Name",
+    "description": "Hide Spiderman name before the movie comes out",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": "spiderman.png",
+        "default_popup": "popup.html"
+       },
+    "background": {
+        "service_worker": "button.js"
+      },
+      "permissions": ["activeTab","tabs"],
+
+      "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+      
+}
+
